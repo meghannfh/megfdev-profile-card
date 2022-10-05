@@ -1,16 +1,11 @@
 import '../App.css'
-import {useState} from 'react'
 
-const Button = ({icon, text, bgcolor, color}) => {
-    const [hover, setHover] = useState(false);
-    const changeBg = hover ? 'change' : '';
+const Button = ({icon, text, bgcolor, color, handleMouseIn, handleMouseOut}) => {
+
 
     return(
-        <div 
-        onMouseEnter={()=> setHover(true)}
-        onMouseLeave={()=> setHover(false)}
-        >
-            <button style={{ backgroundColor: bgcolor, color: color }} className={`buttons ${changeBg}`}>
+        <div onMouseEnter={handleMouseIn} onMouseLeave={handleMouseOut} >
+            <button style={{ backgroundColor: bgcolor, color: color }} className="buttons">
                 <img src={icon} alt="" />
                 {text}
             </button>

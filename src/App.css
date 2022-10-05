@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.container{
+    width: 300px;
+    background-color: hsla(231, 12%, 12%, 1);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 15px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+    gap: 8px;
+    padding: 24px 34px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footerContainer {
+    padding: 19.5px 72.5px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    background-color: #161619;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 10.24px;
+}
+
+.imgContainer{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 9px 13px 9px 11px;
+    width: 115px;
+    height: 34px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: hsla(212, 72%, 60%, 1);
+    font-weight: 500;
+}
+
+.buttons.change {
+    background-color: rgb(51, 111, 180);
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }

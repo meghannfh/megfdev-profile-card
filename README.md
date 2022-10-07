@@ -4,4 +4,4 @@ This mini project was made with React and CSS as part of Scrimba's first React p
 
 |light mode|dark mode|
 |:-:|:-:|
-|<img src="lightmode.png" width=590 height=280>|<img src="darkmode.png" width=590 height=280>
+|<img src="lightmode.png" width=590 height=500>|<img src="darkmode.png" width=590 height=500>

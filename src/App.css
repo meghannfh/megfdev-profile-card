@@ -11,6 +11,7 @@
     align-items: center;
     gap: 3px;
     padding: 15px 0;
+    /* color: hsla(0, 0%, 100%, 1); */
 }
 
 .mainContainer {
@@ -18,16 +19,54 @@
     flex-direction: column;
     line-height: 15px;
     gap: 8px;
-    padding: 24px 34px;
+    padding: 24px 34px 0 34px;
+    color: hsla(0, 0%, 100%, 1);
 }
 
 .footerContainer {
-    padding: 19.5px 72.5px;
+    padding: 10px 72.5px;
     height: 25px;
     display: flex;
     flex-direction: row;
-    background-color: #161619;
     justify-content: space-around;
+}
+
+.switch{
+    display: grid;
+    place-content: center;
+    padding: 5px 0 10px 0;
+}
+
+#dark{
+    background-color: hsla(231, 12%, 12%, 1);
+    transition: all .3s;
+}
+
+#dark .footerContainer {
+    background-color: #161619;
+    transition: all .3s;
+}
+
+#dark .nameContainer,
+#dark .mainContainer {
+    color: hsla(0, 0%, 100%, 1);
+    transition: all .3s;
+}
+
+#light{
+    background-color: #f4f4f4;
+    transition: all .3s;
+}
+
+#light .footerContainer {
+    background-color: #D5D4D8;
+    transition: all .3s;
+}
+
+#light .nameContainer,
+#light .mainContainer {
+    color: black;
+    transition: all .3s;
 }
 
 a {
@@ -37,7 +76,7 @@ a {
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
-    color: hsla(0, 0%, 100%, 1);
+    /* color: hsla(0, 0%, 100%, 1); */
 }
 
 h1 {
@@ -90,4 +129,17 @@ button {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+}
+
+.socials{
+    width: 25px;
+    height: 25px;
+    transition: all .3s;
+}
+
+.socials:hover{
+    border-radius: 3px 3px;
+    background-color: #ffffffe1;
+    box-shadow: 0 0 11px #ffffff;
+    cursor: pointer;
 }
